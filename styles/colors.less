@@ -1,8 +1,13 @@
-@syntax-fg:     #333333;
+@syntax-fg:     #545454;
 @syntax-bg:     #f9f9f9;
 @syntax-gutter: lighten(@syntax-fg, 30%);
 @syntax-guide:  darken(@syntax-bg, 7%);
-@syntax-accent: #6A4D79;
+// @syntax-accent: #7F6B90;
+@syntax-accent: #765582;
+@syntax-accent-2: #452952;
+@syntax-comment: #AEA6B3;
+
+
 
 @syntax-contrast-1: 18%;
 @syntax-contrast-2: 28%;
@@ -10,3 +15,6 @@
 @syntax-fg-2: lighten(@syntax-fg, @syntax-contrast-2);     // even lighter
 @syntax-fg-3:  darken(@syntax-fg, @syntax-contrast-1);     // darker
 @syntax-fg-4:  darken(@syntax-fg, @syntax-contrast-2);     // even darker
+
+@syntax-accent-1: desaturate(lighten(@syntax-accent, 20%), 10%);            // accent lighter
+// @syntax-accent-2: darken(@syntax-accent, 30%);             // accent darker
