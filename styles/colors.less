@@ -1,0 +1,12 @@
+@syntax-fg:     #333333;
+@syntax-bg:     #f9f9f9;
+@syntax-gutter: lighten(@syntax-fg, 30%);
+@syntax-guide:  darken(@syntax-bg, 7%);
+@syntax-accent: #6A4D79;
+
+@syntax-contrast-1: 18%;
+@syntax-contrast-2: 28%;
+@syntax-fg-1: lighten(@syntax-fg, @syntax-contrast-1);     // lighter
+@syntax-fg-2: lighten(@syntax-fg, @syntax-contrast-2);     // even lighter
+@syntax-fg-3:  darken(@syntax-fg, @syntax-contrast-1);     // darker
+@syntax-fg-4:  darken(@syntax-fg, @syntax-contrast-2);     // even darker

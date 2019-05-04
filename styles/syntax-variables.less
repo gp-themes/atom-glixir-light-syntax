@@ -1,0 +1,55 @@
+@import "colors.less";
+
+// Atom Syntax Variables
+//------------------------------------------------------------------------------
+
+// General colors
+@syntax-cursor-color:          @syntax-accent;
+@syntax-background-color:      @syntax-bg;
+@syntax-text-color:            @syntax-fg;
+
+// Selections
+// @syntax-selection-color:       desaturate(lighten(@syntax-accent, 45%), 40%);
+@syntax-selection-color:       darken(@syntax-bg, 7%);
+@syntax-selection-flash-color: desaturate(lighten(@syntax-accent, 40%), 40%);
+
+// Guides
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+// Find and Replace
+@syntax-result-marker-color:           @syntax-selection-color;
+@syntax-result-marker-color-selected:  lighten(@syntax-accent, 35%);
+
+// Gutter
+@syntax-gutter-text-color:                @syntax-gutter;
+@syntax-gutter-text-color-selected:       @syntax-fg;
+@syntax-gutter-background-color:          @syntax-bg; // unused
+@syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
+
+// Git colors - For git diff info, i.e. in the gutter
+@syntax-color-renamed:  hsl(208, 100%, 60%);
+@syntax-color-added:    hsl(150,  60%, 54%);
+@syntax-color-modified: hsl(40,   60%, 70%);
+@syntax-color-removed:  hsl(0,    70%, 60%);
+
+// For language entity colors
+@syntax-color-comment:    lighten(@syntax-fg, 45%);
+@syntax-color-class:      @syntax-accent;
+@syntax-color-variable:   @syntax-fg;
+@syntax-color-method:     @syntax-fg;
+@syntax-color-string:     @syntax-fg-2;
+@syntax-color-constant:   @syntax-fg-3;
+@syntax-color-function:   @syntax-accent;
+@syntax-color-keyword:    @syntax-fg-3;
+
+// Custom Syntax Variables
+// Don't use in packages
+//------------------------------------------------------------------------------
+
+@syntax-illegal-fg:    #ff0000;
+@syntax-illegal-bg:    @syntax-color-removed;
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-cursor-line:   rgba(150, 150, 150, 0.1);

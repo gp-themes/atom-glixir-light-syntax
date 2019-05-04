@@ -1,0 +1,17 @@
+{
+  "author": "GeordieP <gp@gpow.ca>",
+  "name": "glixir-light-syntax",
+  "description": "glixir-light-syntax",
+  "repository": "https://github.com/gp-themes/atom-glixir-light-syntax.git",
+  "license": "MIT",
+  "theme": "syntax",
+  "version": "1.0.1",
+  "keywords": [
+    "light",
+    "monochrome",
+    "syntax"
+  ],
+  "engines": {
+    "atom": "^1.20.0"
+  }
+}
